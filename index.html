@@ -5,121 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Try This Feature</title>
 
-  <!-- Start VWO Async SmartCode -->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- VWO Async SmartCode -->
   <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
   <script type='text/javascript' id='vwoCode'>
   window._vwo_code || (function() {
-  var account_id=1077423,
-  version=2.1,
-  settings_tolerance=2000,
-  hide_element='body',
-  hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;transition:none !important;',
-  /* DO NOT EDIT BELOW THIS LINE */
-  f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+'_settings',cc={};try{var c=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=c&&typeof c==='object'?c:{}}catch(e){}var stT=cc.stT==='session'?w.sessionStorage:w.localStorage;code={nonce:v&&v.nonce,use_existing_jquery:function(){return typeof use_existing_jquery!=='undefined'?use_existing_jquery:undefined},library_tolerance:function(){return typeof library_tolerance!=='undefined'?library_tolerance:undefined},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){if(performance.getEntriesByName('first-contentful-paint')[0]){return''}return typeof cc.hE==='string'?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){if(!f){f=true;var t=d.getElementById('_vis_opt_path_hides');if(t)t.parentNode.removeChild(t);if(e)(new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e}},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript';if(e.src){t.src=e.src}else{t.text=e.text}v&&t.setAttribute('nonce',v.nonce);d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){var n=this.getSettings(),i=d.createElement('script'),r=this;t=t||{};if(n){i.textContent=n;d.getElementsByTagName('head')[0].appendChild(i);if(!w.VWO||VWO.caE){stT.removeItem(cK);r.load(e)}}else{var o=new XMLHttpRequest;o.open('GET',e,true);o.withCredentials=!t.dSC;o.responseType=t.responseType||'text';o.onload=function(){if(t.onloadCb){return t.onloadCb(o,e)}if(o.status===200||o.status===304){_vwo_code.addScript({text:o.responseText})}else{_vwo_code.finish('&e=loading_failure:'+e)}};o.onerror=function(){if(t.onerrorCb){return t.onerrorCb(e)}_vwo_code.finish('&e=loading_failure:'+e)};o.send()}},getSettings:function(){try{var e=stT.getItem(cK);if(!e){return}e=JSON.parse(e);if(Date.now()>e.e){stT.removeItem(cK);return}return e.s}catch(e){return}},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;var e=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish();stT.removeItem(cK)},e);var t;if(this.hide_element()!=='body'){t=d.createElement('style');var n=this.hide_element(),i=n?n+this.hide_element_style():'',r=d.getElementsByTagName('head')[0];t.setAttribute('id','_vis_opt_path_hides');v&&t.setAttribute('nonce',v.nonce);t.setAttribute('type','text/css');if(t.styleSheet)t.styleSheet.cssText=i;else t.appendChild(d.createTextNode(i));r.appendChild(t)}else{t=d.getElementsByTagName('head')[0];var i=d.createElement('div');i.style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;display: block !important;';i.setAttribute('id','_vis_opt_path_hides');i.classList.add('_vis_hide_layer');t.parentNode.insertBefore(i,t.nextSibling)}var o=window._vis_opt_url||d.URL,s='https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(o)+'&vn='+version;if(w.location.search.indexOf('_vwo_xhr')!==-1){this.addScript({src:s})}else{this.load(s+'&x=true')}}};w._vwo_code=code;code.init();})();
+    var account_id=1077423,
+    version=2.1,
+    settings_tolerance=2000,
+    hide_element='body',
+    hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;transition:none !important;',
+    /* DO NOT EDIT BELOW THIS LINE */
+    f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+'_settings',cc={};try{var c=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=c&&typeof c==='object'?c:{}}catch(e){}var stT=cc.stT==='session'?w.sessionStorage:w.localStorage;code={nonce:v&&v.nonce,use_existing_jquery:function(){return typeof use_existing_jquery!=='undefined'?use_existing_jquery:undefined},library_tolerance:function(){return typeof library_tolerance!=='undefined'?library_tolerance:undefined},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){if(performance.getEntriesByName('first-contentful-paint')[0]){return''}return typeof cc.hE==='string'?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){if(!f){f=true;var t=d.getElementById('_vis_opt_path_hides');if(t)t.parentNode.removeChild(t);if(e)(new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e}},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript';if(e.src){t.src=e.src}else{t.text=e.text}v&&t.setAttribute('nonce',v.nonce);d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){var n=this.getSettings(),i=d.createElement('script'),r=this;t=t||{};if(n){i.textContent=n;d.getElementsByTagName('head')[0].appendChild(i);if(!w.VWO||VWO.caE){stT.removeItem(cK);r.load(e)}}else{var o=new XMLHttpRequest;o.open('GET',e,true);o.withCredentials=!t.dSC;o.responseType=t.responseType||'text';o.onload=function(){if(t.onloadCb){return t.onloadCb(o,e)}if(o.status===200||o.status===304){_vwo_code.addScript({text:o.responseText})}else{_vwo_code.finish('&e=loading_failure:'+e)}};o.onerror=function(){if(t.onerrorCb){return t.onerrorCb(e)}_vwo_code.finish('&e=loading_failure:'+e)};o.send()}},getSettings:function(){try{var e=stT.getItem(cK);if(!e){return}e=JSON.parse(e);if(Date.now()>e.e){stT.removeItem(cK);return}return e.s}catch(e){return}},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;var e=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish();stT.removeItem(cK)},e);var t;if(this.hide_element()!=='body'){t=d.createElement('style');var n=this.hide_element(),i=n?n+this.hide_element_style():'',r=d.getElementsByTagName('head')[0];t.setAttribute('id','_vis_opt_path_hides');v&&t.setAttribute('nonce',v.nonce);t.setAttribute('type','text/css');if(t.styleSheet)t.styleSheet.cssText=i;else t.appendChild(d.createTextNode(i));r.appendChild(t)}else{t=d.getElementsByTagName('head')[0];var i=d.createElement('div');i.style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;display: block !important;';i.setAttribute('id','_vis_opt_path_hides');i.classList.add('_vis_hide_layer');t.parentNode.insertBefore(i,t.nextSibling)}var o=window._vis_opt_url||d.URL,s='https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(o)+'&vn='+version;if(w.location.search.indexOf('_vwo_xhr')!==-1){this.addScript({src:s})}else{this.load(s+'&x=true')}}};w._vwo_code=code;code.init();})();
   </script>
   <!-- End VWO Async SmartCode -->
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      background: #f4f6f8;
-    }
-    header {
-      background: linear-gradient(to right, #667eea, #764ba2);
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 600;
-    }
-   .banner {
-  width: 100%;
-  height: 100px; /* Set fixed height */
-  overflow: hidden;
-  position: relative;
-}
-
-.banner img {
-  width: 200%; /* Double the width for scrolling effect */
-  height: 100px; /* Match banner height */
-  object-fit: cover; /* Crop nicely */
-  animation: scroll 30s linear infinite;
-}
-
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-    .cards {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 2rem;
-      flex-wrap: wrap;
-    }
-    .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      width: 250px;
-      text-align: center;
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-10px);
-    }
-    .card h2 {
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-      color: #333;
-    }
-    .card p {
-      color: #666;
+    .banner img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
     }
   </style>
-
 </head>
 
 <body>
+
+  <!-- Top Banner -->
   <div class="banner">
-    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Scrolling Banner" />
+    <img src="https://t4.ftcdn.net/jpg/03/08/69/75/360_F_308697506_9dsBYHXm9FwuW0qcEqimAEXUvzTwfzwe.jpg" alt="Scrolling Banner">
   </div>
 
-  <header>
-    Try This Feature
-  </header>
-
-  <section class="cards">
-    <!-- Your cards go here -->
-  </section>
-</body>
-
-
-<section class="cards">
-  <div class="card">
-    <h2>Low</h2>
-    <p>Ideal for getting started and exploring basic features.</p>
-    <a class="subscribe-button" href="https://sigma-boy-test.chargebee.com/hosted_pages/checkout?subscription_items[item_price_id][0]=LOW-USD-Monthly&utm_source=cb-app-copy" target="_blank">Subscribe</a>
+  <!-- Header -->
+  <div class="container text-center my-5">
+    <h1>Try This Feature</h1>
   </div>
 
-  <div class="card">
-    <h2>Medium</h2>
-    <p>Perfect balance between features and flexibility for growing teams.</p>
-    <a class="subscribe-button" href="https://sigma-boy-test.chargebee.com/hosted_pages/checkout?subscription_items[item_price_id][0]=MED-USD-Monthly&utm_source=cb-app-copy" target="_blank">Subscribe</a>
+  <!-- Second Banner -->
+  <div class="banner">
+    <img src="https://www.rinnovabilierisparmio.it/wp-content/uploads/2024/04/impatto-ambientale-678x381.jpg" alt="Scrolling Banner">
   </div>
 
-  <div class="card">
-    <h2>High</h2>
-    <p>Full power and advanced features for scaling operations.</p>
-    <a class="subscribe-button" href="https://sigma-boy-test.chargebee.com/hosted_pages/checkout?subscription_items[item_price_id][0]=HIG-USD-Monthly&utm_source=cb-app-copy" target="_blank">Subscribe</a>
-  </div>
-</section>
+  <!-- Pricing Cards -->
+  <div class="container my-5">
+    <div class="row text-center">
+      
+      <!-- Low Plan -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Low Plan</h5>
+            <p class="card-text">Affordable plan for getting started.</p>
+            <a href="https://sigma-boy-test.chargebee.com/hosted_pages/checkout?subscription_items[item_price_id][0]=LOW-USD-Monthly&utm_source=cb-app-copy" class="btn btn-primary">Subscribe</a>
+          </div>
+        </div>
+      </div>
 
+      <!-- Medium Plan -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Medium Plan</h5>
+            <p class="card-text">For growing businesses and teams.</p>
+            <a href="https://sigma-boy-test.chargebee.com/hosted_pages/checkout?subscription_items[item_price_id][0]=MED-USD-Monthly&utm_source=cb-app-copy" class="btn btn-success">Subscribe</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- High Plan -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">High Plan</h5>
+            <p class="card-text">Best for enterprises with high needs.</p>
+            <a href="https://sigma-boy-test.chargebee.com/hosted_pages/checkout?subscription_items[item_price_id][0]=HIG-USD-Monthly&utm_source=cb-app-copy" class="btn btn-danger">Subscribe</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
