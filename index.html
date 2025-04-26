@@ -35,20 +35,25 @@
       font-size: 2rem;
       font-weight: 600;
     }
-    .banner {
-      width: 100%;
-      overflow: hidden;
-      position: relative;
-      margin-bottom: 2rem;
-    }
-    .banner img {
-      width: 100%;
-      animation: scroll 30s linear infinite;
-    }
-    @keyframes scroll {
-      0% {transform: translateX(0);}
-      100% {transform: translateX(-50%);}
-    }
+   .banner {
+  width: 100%;
+  height: 100px; /* Set fixed height */
+  overflow: hidden;
+  position: relative;
+}
+
+.banner img {
+  width: 200%; /* Double the width for scrolling effect */
+  height: 100px; /* Match banner height */
+  object-fit: cover; /* Crop nicely */
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
     .cards {
       display: flex;
       justify-content: center;
@@ -81,6 +86,10 @@
 </head>
 
 <body>
+  <div class="banner">
+    <img src="https://source.unsplash.com/random/1600x400/?technology,innovation" alt="Scrolling Banner" />
+  </div>
+
 
 <header>
   Try This Feature
