@@ -6,4 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.textContent = "Thanks for clicking!";
     });
   });
-  
+
+function showMessage(level) {
+  alert(`You clicked on "${level}" priority! 🚀`);
+}
